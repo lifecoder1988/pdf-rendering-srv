@@ -7,7 +7,7 @@ ENV PORT=9000
 
 USER root
 
-RUN apt update -y \
+RUN apt update  --allow-unauthenticated -y \
   && curl -sL https://deb.nodesource.com/setup_18.x | bash - \
   && apt install -y fonts-dejavu ttf-mscorefonts-installer gnupg nodejs \
   && rm -rf /var/lib/apt/lists/*
