@@ -28,3 +28,5 @@ HEALTHCHECK CMD curl -I http://localhost:9000/
 
 EXPOSE 9000
 CMD [ "node", "." ]
+
+
