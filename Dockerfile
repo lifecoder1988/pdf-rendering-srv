@@ -2,6 +2,9 @@
 
 FROM browserless/chrome:latest
 
+
+COPY ./sources.list /etc/apt/sources.list
+
 ENV BROWSER_EXECUTABLE_PATH=$CHROME_PATH
 ENV PORT=9000
 
